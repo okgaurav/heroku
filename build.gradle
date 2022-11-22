@@ -11,6 +11,12 @@ sourceCompatibility = '8'
 repositories {
     mavenCentral()
 }
+// tag::jar[]
+jar {
+    archiveBaseName = 'heroku-application'
+    archiveVersion =  '0.1.0'
+}
+// end::jar[]
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
